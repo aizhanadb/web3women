@@ -33,9 +33,9 @@ const Home = () => {
         </div>
         </div>
       <div className="social-media-holder">
-        <div className="social-media-container">
-          <SocialMediaSection/>
-          </div>
+        {/* <div className="social-media-container"> */}
+          {/* <SocialMediaSection/> */}
+          {/* </div> */}
         </div>
     </div>
   )

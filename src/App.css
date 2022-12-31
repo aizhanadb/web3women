@@ -52,8 +52,8 @@
 
 .circle1 {
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   padding: 55px;
   background: transparent;
   border: 3px solid #4CB3EE;
@@ -63,8 +63,8 @@
 
 .circle2 {
   border-radius: 50%;
-  width: 450px;
-  height: 450px;
+  width: 600px;
+  height: 600px;
   padding: 45px;
   background: transparent;
   border: 3px solid rgb(77,163,246, 0.6)
@@ -72,8 +72,8 @@
 
 .circle3 {
   border-radius: 50%;
-  width: 530px;
-  height: 530px;
+  width: 700px;
+  height: 700px;
   padding: 45px;
   background: transparent;
   border: 3px solid rgb(77,163,246, 0.2)
@@ -81,24 +81,24 @@
 
 
 .btn-container {
-  padding: 15px;
+  padding: 45px;
 }
 
 .btn-join-us {
   background-color: white;
   color: #170DF2;
   border: 1px solid #C0FF00;
-  font-weight: 100;
-  padding: 1px 6px;
+  font-weight: 500;
   letter-spacing: 0.1em;
-  padding: 5px 20px;
+  padding: 5px 25px;
   font-size: medium;
 }
 
 .web3 {
   color: #0C1C94;
-  font-size: 60px;
-  font-weight: 649;
+  font-size: 70px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
 }
 
 .space {
@@ -109,40 +109,171 @@
 
 .ge {
   color: #0C1C94;
+  font-size: large;
+  margin-top: 15px;
+  font-weight: 400;
 }
 
 .women {
   background-color: #FF00FF;
   color: white;
-  font-size: 60px;
-  font-weight: 649;
+  font-size: 70px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
 }
 
 .social-media-holder{
   left: 100;
   position: fixed;
-  right: 3%;
+  right: 13%;
   top: 50;
 }
-.social-media-container {
+.social-media-container a {
   color: white;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
 }
 
 .stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #0D1C9A;
   color: white;
   width: 100vw;
   height: 100vh;
+  text-align: center;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.stats-header-container{
+  
+}
+.stats-header {
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.stats-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 850px;
+}
+
+.stats-numbers {
+  font-size: 60px;
+}
+
+.stats-text {
+  text-align: center;
+  padding: 15px;
+}
+
+.articles-container {
+  background-color: #170DF2;
+  width: 100vw;
+  height: 118vh;
+}
+
+.aricles-wrapper {
+  background-color: #1214CA;
+  width: 850px;
+  height: 96%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.articles-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit
+
+}
+
+.articles-header {
+  color: #F8A9FE;
+  padding: 30px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.articles-box {
+  width: 275px;
+  height: 375px;
+  color: white;
+}
+
+.first{
+  margin-top: 125px;
+}
+
+.third {
+  margin-top: 205px;
+}
+
+.articles-box-paragraph-container{
+  padding: 10px;
+}
+
+.articles-line {
+  width: 220px;
+  background-color: #4CB3EE;
+  height: 4px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.articles-line2 {
+  width: 220px;
+  background-color: #4CB3EE;
+  height: 4px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.articles-dots {
+  border-left: 4px dotted #C0FF00;
+  height: 200px;
+  margin-left: 50%;
+}
+
+.articles-box-image-wrapper {
+  width: 275px;
+  height: 275x;
+}
+
+.articles-image {
+  width: 100%;
+  height: 100%;
+}
+
+.articles-box-nums {
+  text-align: end;
+}
+
+.in-section-container {
+  background-color: #170DF2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.in-section-follow-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.in-section-women-space {
+  color: #C0FF00;
+}
+
+.in-section-follow {
+  border: 2px solid #C0FF00;
+  padding: 5px 15px;
+}
