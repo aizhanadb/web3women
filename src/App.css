@@ -7,11 +7,21 @@
 .main-container {
   background-image: radial-gradient(circle, #EDAFFC, #7454F6, #261AF3);
   width: 100vw;
-  height: 110vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.menu-btn {
+  font-size: 30px;
+  color: #C0FF00;
+}
+
+.menu {
+  text-align: center;
+  cursor: pointer;
 }
 
 .holder {
@@ -44,10 +54,13 @@
   font-size: large;
 }
 
-.web3-container {
+.web3-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100;
 }
 
 .circle1 {
@@ -176,7 +189,7 @@
 .articles-container {
   background-color: #170DF2;
   width: 100vw;
-  height: 118vh;
+  height: 150vh;
 }
 
 .aricles-wrapper {

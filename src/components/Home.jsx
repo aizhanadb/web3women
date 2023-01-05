@@ -7,7 +7,7 @@ import SocialMediaSection from './SocialMediaSection';
 
 const Home = () => {
   return (
-    <div className='main-container'>
+    <div className='main-container' id='home'>
       <div className="holder">
         <header className='header-container'>
             <img className='image-w3w'
@@ -20,7 +20,7 @@ const Home = () => {
           <div className="circle3">
           <div className="circle2">
           <div className="circle1">
-        <div web3-container>
+        <div className='web3-wrapper'>
           <div className="btn-container">
           <button className='btn-join-us'>Join Us</button>
           </div>

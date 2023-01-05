@@ -21,7 +21,7 @@ const Articles = () => {
             </h2>
             </div>
         </div>
-        <div className="articles-box second">
+        <div className="articles-box second" id='articles'>
             <div className="articles-dots"></div>
             <div className="articles-box-image-wrapper">
             <h2 className='articles-box-nums'>
