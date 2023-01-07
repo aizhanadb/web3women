@@ -15,8 +15,8 @@
 }
 
 .menu-btn {
-  font-size: 30px;
-  color: #C0FF00;
+  font-size: 30px !important;
+  color: #C0FF00 !important;
 }
 
 .menu {
@@ -289,4 +289,22 @@
 .in-section-follow {
   border: 2px solid #C0FF00;
   padding: 5px 15px;
+}
+
+.contact-container {
+  background-color: #170DF2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-container {
+  width: 700px;
+}
+
+.name-email {
+  display: flex;
+  justify-content: space-between;
 }

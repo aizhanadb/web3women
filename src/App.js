@@ -6,6 +6,7 @@ import About from './components/About';
 import SocialMediaSection from './components/SocialMediaSection';
 import Articles from './components/Articles';
 import InstSection from './components/InstSection';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Articles/>
       <InstSection/>
+      <Contact/>
     </div>
   );
 }
