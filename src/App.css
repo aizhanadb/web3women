@@ -15,8 +15,8 @@
 }
 
 .menu-btn {
-  font-size: 30px;
-  color: #C0FF00;
+  font-size: 30px !important;
+  color: #C0FF00 !important;
 }
 
 .menu {

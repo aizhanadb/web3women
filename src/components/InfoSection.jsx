@@ -26,7 +26,7 @@ const InfoSection = () => {
         </Modal.Header>
         <Link to="home" spy={true} offset={50} onClick={closeMenu}><Modal.Body className='menu'>HOME</Modal.Body></Link>
         <Link to="about" spy={true} offset={50} onClick={closeMenu}><Modal.Body className='menu'>ABOUT</Modal.Body></Link>
-        <Modal.Body className='menu'>CONTACT</Modal.Body>
+        <Link to='contact' spy={true} offset={50} onClick={closeMenu}><Modal.Body className='menu'>CONTACT</Modal.Body></Link>
         <Link to="articles" spy={true} offset={-100} onClick={closeMenu}><Modal.Body className='menu'>LATEST</Modal.Body></Link>
       </Modal>
     </>
@@ -37,22 +37,3 @@ const InfoSection = () => {
 export default InfoSection
 
 
-// import React from 'react';
-// import Dropdown from 'react-bootstrap/Dropdown';
-// import DropdownButton from 'react-bootstrap/DropdownButton';
-
-// const InfoSection = () => {
-//   return (
-//     <>
-//         <DropdownButton id="dropdown-item-button" title="Info">
-//       {/* <Dropdown.ItemText>Dropdown item text</Dropdown.ItemText> */}
-//       <Dropdown.Item as="button">HOME</Dropdown.Item>
-//       <Dropdown.Item as="button">ABOUT</Dropdown.Item>
-//       <Dropdown.Item as="button">CONTACT</Dropdown.Item>
-//       <Dropdown.Item as="button">LATEST ARTICLES</Dropdown.Item>
-//     </DropdownButton>
-//     </>
-//   )
-// }
-
-// export default InfoSection

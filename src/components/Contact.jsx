@@ -22,6 +22,8 @@ const schema = yup.object().shape({
   terms: yup.bool().required().oneOf([true], 'Terms must be accepted'),
 });
 
+console.log(schema)
+
 return (
     <Formik
       validationSchema={schema}
@@ -36,6 +38,8 @@ return (
         terms: false,
       }}
     >
+
+      
       {({
         handleSubmit,
         handleChange,
@@ -45,13 +49,18 @@ return (
         isValid,
         errors,
       }) => (
-    <div className='contact-container'>
-        <Form noValidate onSubmit={handleSubmit} action="https://getform.io/f/dadf1212-cb4d-4634-87f8-aef5e61d7197" method="POST">
+    <div id='contact' className='contact-container'>
+        <Form  action="https://getform.io/f/dadf1212-cb4d-4634-87f8-aef5e61d7197" method="POST" noValidate 
+        
+        // onSubmit={handleSubmit} 
+        >
             {/* <form action="https://getform.io/f/dadf1212-cb4d-4634-87f8-aef5e61d7197" method="POST"> */}
           <Row className="mb-3">
-            <Form.Group as={Col} md="4" controlId="validationFormik01">
+            <Form.Group style={{width: "250px"}} as={Col} md="4" controlId="validationFormik01">
             <Form.Label>Name</Form.Label>
-           <Form.Control type="name"  
+           <Form.Control 
+                type="name"
+                placeholder="Enter your name"
                 name='name'
                 value={values.name}
                 onChange={handleChange}
@@ -60,7 +69,7 @@ return (
               <Form.Control.Feedback type="invalid">
                 {errors.name}</Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="4" controlId="validationFormik02">
+            <Form.Group  style={{width: "250px"}} as={Col} md="4" controlId="validationFormik02">
             <Form.Label>Email address</Form.Label>
             <Form.Control 
                 type="email" 
@@ -69,7 +78,6 @@ return (
                 value={values.email}
                 onChange={handleChange}
                 isInvalid={!!errors.email}
-
               />
 
               <Form.Control.Feedback type="invalid"> {errors.email}</Form.Control.Feedback>
@@ -83,7 +91,7 @@ return (
       >
               <Form.Control 
               as="textarea" 
-              placeholder="" 
+              placeholder="Subject" 
               name='subject' 
                 value={values.subject}
                 onChange={handleChange}
@@ -122,7 +130,10 @@ return (
               id="validationFormik0"
             />
           </Form.Group>
-          <Button type="submit">Submit form</Button>
+          {
+           values.name !== "" && values.email !== "" && values.subject !== "" && values.message !== "" && <Button type="submit">Submit form</Button> 
+          }
+          {/* <Button type="submit">Submit form</Button> */}
           {/* </form> */}
         </Form>
         </div>

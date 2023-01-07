@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       <div className="social-media-holder">
         {/* <div className="social-media-container"> */}
-          {/* <SocialMediaSection/> */}
+          <SocialMediaSection/>
           {/* </div> */}
         </div>
     </div>
