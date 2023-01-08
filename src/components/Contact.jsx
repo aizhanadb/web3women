@@ -14,7 +14,10 @@ const Contact = () => {
 
 const schema = yup.object().shape({
   name: yup.string().required(),
-  email: yup.string().required(),
+  email: yup.string()
+  .email("*Must be a valid email address")
+  .max(100, "*Email must be less than 100 characters")
+  .required("*Email is required"),
   username: yup.string().required(),
   subject: yup.string().required(),
   message: yup.string().required(),
